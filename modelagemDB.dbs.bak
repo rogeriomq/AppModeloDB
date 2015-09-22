@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="appModeloDB" id="Project1414871" html="n" template="Default" database="H2" >
+	<schema name="PUBLIC" catalogname="APPMODELODB" schemaname="PUBLIC" >
+		<table name="CONTATO" >
+			<column name="ID" type="integer" length="10" decimal="0" jt="4" mandatory="y" >
+				<defo>(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_671C0627_A64F_49AA_AEBB_A3DDF0705A44)</defo>
+			</column>
+			<column name="TIPO" type="integer" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="DESCR" type="varchar" length="100" decimal="0" jt="12" mandatory="y" />
+			<column name="PESSOAID" type="uuid" length="128" decimal="0" jt="-2" mandatory="y" />
+			<index name="CONSTRAINT_6" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<index name="IDX_CONTATO" unique="NORMAL" >
+				<column name="PESSOAID" />
+			</index>
+			<fk name="FK_CONTATO" to_schema="PUBLIC" to_table="PESSOA" delete_action="restrict" update_action="restrict" >
+				<fk_column name="PESSOAID" pk="ID" />
+			</fk>
+		</table>
+		<table name="PESSOA" >
+			<column name="ID" type="uuid" length="128" decimal="0" jt="-2" mandatory="y" />
+			<column name="NOME" type="varchar" length="100" decimal="0" jt="12" />
+			<column name="DATANASC" type="date" length="8" decimal="0" jt="91" />
+			<column name="APELIDO" type="varchar" length="20" decimal="0" jt="12" />
+			<column name="ENDERECO" type="varchar" length="100" decimal="0" jt="12" />
+			<column name="IMG" type="varchar" length="20" decimal="0" jt="12" mandatory="y" />
+			<index name="PK_CONTATO" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+		<sequence name="SYSTEM_SEQUENCE_671C0627_A64F_49AA_AEBB_A3DDF0705A44" start="1" />
+	</schema>
+	<connector name="appModeloDB-connection" database="H2" driver_class="org.h2.Driver" driver_jar="h2-1.4.188.jar" url="jdbc:h2:/home/man1gold/NetBeansProjects/AppModeloDB/banco/appModeloDB;AUTO_SERVER=TRUE;IFEXISTS=TRUE;MODE=MYSQL" host="localhost" port="-1" user="sa" passwd="c2E=" schema_mapping="" />
+	<layout id="Layout1414875" name="appModeloDB" joined_routing="y" show_column_type="y" show_relation_columns="y" >
+		<entity schema="PUBLIC" name="PESSOA" color="b7c8e3" x="45" y="180" />
+		<entity schema="PUBLIC" name="CONTATO" color="b7c8e3" x="45" y="45" />
+		<script name="PESSOA" id="SQL2325815" >
+			<string><![CDATA[SELECT * 
+FROM
+	APPMODELODB.PESSOA A
+	INNER JOIN APPMODELODB.CONTATO O ON ( O.PESSOAID = A.ID ) ;]]></string>
+		</script>
+	</layout>
+</project>

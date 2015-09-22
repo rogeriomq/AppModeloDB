@@ -1,0 +1,113 @@
+2015-09-01 20:44:07 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:44:07 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:44:07 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:44:10 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:44:11 jdbc[6]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-188]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:91)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.netbeans.modules.db.explorer.DbDriverManager.getConnection(DbDriverManager.java:131)
+	at org.netbeans.modules.db.explorer.DatabaseConnection.doConnect(DatabaseConnection.java:904)
+	at org.netbeans.modules.db.explorer.DatabaseConnection.access$200(DatabaseConnection.java:103)
+	at org.netbeans.modules.db.explorer.DatabaseConnection$3.run(DatabaseConnection.java:970)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1423)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-188]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+2015-09-01 20:44:55 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:44:55 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:44:55 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:45:17 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:45:25 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-188]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1468)
+	at org.h2.jdbc.JdbcStatement.checkClosed(JdbcStatement.java:985)
+	at org.h2.jdbc.JdbcStatement.checkClosed(JdbcStatement.java:959)
+	at org.h2.jdbc.JdbcStatement.getUpdateCount(JdbcStatement.java:230)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatement(SQLExecutionHelper.java:881)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:84)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1423)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2015-09-01 20:45:32 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-188]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1468)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1443)
+	at org.h2.jdbc.JdbcConnection.getWarnings(JdbcConnection.java:619)
+	at org.netbeans.modules.db.explorer.DatabaseConnection.isVitalConnection(DatabaseConnection.java:327)
+	at org.netbeans.modules.db.explorer.node.ConnectionNode.canDestroy(ConnectionNode.java:375)
+	at org.openide.nodes.FilterNode.canDestroy(FilterNode.java:600)
+	at org.openide.nodes.FilterNode.canDestroy(FilterNode.java:600)
+	at org.netbeans.modules.openide.explorer.ExplorerActionsImpl.updateActions(ExplorerActionsImpl.java:259)
+	at org.netbeans.modules.openide.explorer.ExplorerActionsImpl$ActionStateUpdater.run(ExplorerActionsImpl.java:795)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1423)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2015-09-01 20:45:32 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:45:32 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:45:32 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:45:35 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:45:43 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:45:43 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:45:43 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 20:45:43 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 21:09:09 database: wrong user or password; user: ""
+org.h2.message.DbException: Wrong user name or password [28000-188]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.engine.Engine.openSession(Engine.java:106)
+	at org.h2.engine.Engine.openSession(Engine.java:175)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:153)
+	at org.h2.engine.Engine.createSession(Engine.java:136)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:149)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: Wrong user name or password [28000-188]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 9 more
+2015-09-01 22:51:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 22:51:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-01 22:51:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-15 22:03:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "RANDOM_UUID[*]()"; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REPLACE, {"; SQL statement:
+RANDOM_UUID() [42001-188]
+2015-09-15 22:16:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-15 22:16:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
+2015-09-15 22:16:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-188]
