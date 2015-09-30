@@ -28,7 +28,7 @@
             </Text>
          </children>
       </HBox>
-      <ListView fx:id="listview" layoutY="58.0" prefHeight="485.0" prefWidth="450.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="58.0" />
+      <ListView fx:id="listview" layoutY="58.0" onMouseClicked="#openEditView" prefHeight="485.0" prefWidth="450.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="58.0" />
       <HBox alignment="CENTER" layoutY="541.0" prefHeight="52.0" prefWidth="450.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Button mnemonicParsing="false" text="REMOVER SELECAO" />

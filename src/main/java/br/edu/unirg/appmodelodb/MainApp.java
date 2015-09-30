@@ -1,6 +1,7 @@
 package br.edu.unirg.appmodelodb;
 
 import br.edu.unirg.appmodelodb.dao.ConexaoDB;
+import br.edu.unirg.appmodelodb.dao.PessoaDAO;
 import java.sql.Connection;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
@@ -22,10 +23,8 @@ public class MainApp extends Application {
         stage.show();
         
         //Teste de conexao
-//        ConexaoDB x = new ConexaoDB();
-//        Connection con = x.connect();
-//        System.out.println("CONECTOU");
-//        con.close();
+//        PessoaDAO dao = new PessoaDAO();
+//        dao.getAllOrderByName().forEach(p->{System.out.println(p.getid() + " | " + p.getNome());});
 //        Platform.exit();
     }
 

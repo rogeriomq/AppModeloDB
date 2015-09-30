@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.unirg.appmodelodb.controllers.ListCellViewController">
+  <columnConstraints>
+    <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="76.0" minWidth="76.0" prefWidth="76.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="334.0" minWidth="10.0" prefWidth="321.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fx:id="imageView" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" GridPane.rowSpan="2" />
+      <Text fx:id="textNome" boundsType="VISUAL" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textOrigin="CENTER" wrappingWidth="316.734375" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="textApelido" boundsType="VISUAL" fill="#2003da" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textOrigin="CENTER" wrappingWidth="319.7294921875" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   </children>
+</GridPane>
