@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="145.0" prefWidth="309.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.unirg.appmodelodb.controllers.ContatoEditViewController">
+   <children>
+      <Label layoutX="14.0" layoutY="13.0" text="Tipo" />
+      <ChoiceBox fx:id="choiceBoxTipo" layoutX="14.0" layoutY="29.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="64.0" text="Contato" />
+      <TextField fx:id="textFieldContato" layoutX="14.0" layoutY="81.0" prefHeight="25.0" prefWidth="281.0" />
+      <Button layoutX="14.0" layoutY="112.0" mnemonicParsing="false" text="Cancelar" />
+      <Button layoutX="212.0" layoutY="112.0" mnemonicParsing="false" onAction="#confirmarContato" text="Confirmar" />
+   </children>
+</AnchorPane>

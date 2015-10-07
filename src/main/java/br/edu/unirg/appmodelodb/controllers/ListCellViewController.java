@@ -32,10 +32,9 @@ public class ListCellViewController implements Initializable {
     }
     
     public void loadPessoa(Pessoa p) {
+        //System.out.println("apelido = " + p.getApelido());
        textNome.setText(p.getNome());
        textApelido.setText(p.getApelido());
-        //textNome.textProperty().bind(p.nomeProperty());
-        //textApelido.textProperty().bind(p.apelidoProperty());
     }
     
 }

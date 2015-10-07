@@ -28,6 +28,6 @@
             <Insets />
          </GridPane.margin>
       </Text>
-      <Text fx:id="textApelido" boundsType="VISUAL" fill="#2003da" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textOrigin="CENTER" wrappingWidth="319.7294921875" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Text fx:id="textApelido" boundsType="VISUAL" fill="#545457" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textOrigin="CENTER" wrappingWidth="319.7294921875" GridPane.columnIndex="1" GridPane.rowIndex="1" />
    </children>
 </GridPane>

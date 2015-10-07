@@ -1,3 +1,18 @@
-.button {
-    -fx-font-weight: bold;
+.floatButton {
+    -fx-background-radius: 25;
+}
+
+.floatButton:hover, .floatButton:focused{
+    -fx-background-size: 105%;
+    -fx-cursor:hand;
+}
+.floatButton:armed {
+    -fx-background-size: 26px;
+    -fx-cursor:hand;
+}
+
+.floatButtonAdd {
+    -fx-background-image: url("../img/novo.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: 50%, 100%;
 }

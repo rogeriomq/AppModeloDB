@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
@@ -8,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.unirg.appmodelodb.controllers.EditViewController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="450.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.unirg.appmodelodb.controllers.EditViewController">
    <children>
       <HBox alignment="TOP_CENTER" prefHeight="158.0" prefWidth="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -42,16 +43,23 @@
                   <Insets />
                </StackPane.margin>
             </TableView>
-            <Button fx:id="btNovoContato" mnemonicParsing="false" onAction="#openViewContato" prefHeight="40.0" prefWidth="40.0" text="+" StackPane.alignment="BOTTOM_RIGHT">
+            <Button fx:id="btNovoContato" mnemonicParsing="false" onAction="#openViewContato" opacity="0.85" prefHeight="50.0" prefWidth="50.0" StackPane.alignment="BOTTOM_RIGHT">
                <StackPane.margin>
                   <Insets bottom="5.0" right="20.0" />
                </StackPane.margin>
+               <styleClass>
+                  <String fx:value="floatButton" />
+                  <String fx:value="floatButtonAdd" />
+               </styleClass>
             </Button>
          </children>
       </StackPane>
       <HBox alignment="CENTER" layoutX="10.0" layoutY="579.0" prefHeight="57.0" prefWidth="430.0" spacing="10.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#cancelarContato" text="Cancelar" />
+            <Button mnemonicParsing="false" onAction="#cancelarContato" style="-fx-background-repeat: no-repeat; -fx-background-image: url(&quot;../img/excluir.png&quot;);" text="Cancelar">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="50.0" radius="24.5" spread="0.14" width="50.0" />
+               </effect></Button>
             <Button mnemonicParsing="false" onAction="#confirmarContato" text="Confirmar" />
          </children>
       </HBox>
